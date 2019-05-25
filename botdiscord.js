@@ -646,7 +646,7 @@ client.on('message',async message => {
   let role = message.guild.roles.find('name',args) || message.guild.roles.get(args);
 
 
-  if(message.content.startsWith(prefix + "!Role")) {
+  if(message.content.startsWith(prefix + "Role")) {
     if(!args) return message.reply('اكتب اسم الرتبة');
     if(!role) return message.reply('هذه الرتبة غير موجودة');
     let iQp = new Discord.RichEmbed()
