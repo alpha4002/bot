@@ -85,8 +85,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('!bcall')){
- if (message.author.id !== 'ايديك') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === 'ايديك') return;
+ if (message.author.id !== '388074664649293836') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '388074664649293836') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -102,7 +102,7 @@ m.sendMessage(args)
  client.on('message' , function (message){
       var token = 'توكن بوتك'; // التوكن هنا بس
       if(message.content === '!restart') {
-if(message.author.id !== 'ايديك') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
+if(message.author.id !== '388074664649293836') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
           client.destroy();
           client.login(token) // لا تغيرها
 var time = 7200000;
@@ -301,28 +301,7 @@ if (ReBeLL.content.startsWith(prefix + `8ball`)) {
  
  
  
- client.on('message', message => {
-if(message.content.startsWith('!مستخدم') ) {
-     if(!message.channel.guild) return message.reply('** This command only for servers **')
-          var args = message.content.split(" ").slice(1);
-    let sent = 0
-    let count = 1;
-    
-      if(args){
-client.users.filter(u => u.discriminator == args[0]).forEach(u => {
-    if(sent > 4){
-     return
-    }
-    sent = sent + 1
-      message.channel.send(`
-
-      ** ${count}➥ ${u.tag}**
-         
-      `)
-      count++;
-})
-}
-}
+ 
 if(message.content ===('!مستخدم') ) {
      if(!message.channel.guild) return message.reply('** This command only for servers **')
   let sent = 0
@@ -456,7 +435,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "F5AmEh.bot" // غير هنا حط اسم البوت
+          text: "Alpha bot" // غير هنا حط اسم البوت
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -597,17 +576,23 @@ client.on('message', message => {
 ❖!link  لاخذ رابط اي بوت 
 ❖!رابط لاخذ رابط السيرفر
 ❖!invites لمعرفة كم دعوت شخص
-❖ !server  لمعرفت معلومات السيرفر
+❖!server  لمعرفت معلومات السيرفر
 ❖!bans  يعطيك تاقات الي تبندو ورا بعض 
+❖!giveaway امر القيف اواي
+❖!Role لمعرفة معلومات الرتبة
+❖!id لمفرفة معلوماتك
 ❖!owner لترسل رسالة لصاحب البوت
-❖!مسح لمسح الشات 
-❖!اقتراح وكتب اقتراحك وسوف يصل الاداره
+❖!لمسح الشات مسح
+❖!اكتب اي اقتراح للادارة اقتراح
 ❖!move لسحب جميع الاعضاء الذين في الرومات لعندك
 ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
 ❖اوامر العاب 
-❖!زواج لعبة زواج
-❖!ابلع  لعبة حلوه
-
+❖!لعبة زواج زواج
+❖!emojilist يعطيك ايموجيات السيرفر
+❖!rps لعبة حجرة ورقة مقص
+❖!لعبة حلوة ابلع 
+❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
+  ❖ نشالله راح يكون البوت يطور مع الوقت ❖
 
 
 
@@ -661,7 +646,7 @@ client.on('message',async message => {
   let role = message.guild.roles.find('name',args) || message.guild.roles.get(args);
 
 
-  if(message.content.startsWith(prefix + "gRole")) {
+  if(message.content.startsWith(prefix + "!Role")) {
     if(!args) return message.reply('اكتب اسم الرتبة');
     if(!role) return message.reply('هذه الرتبة غير موجودة');
     let iQp = new Discord.RichEmbed()
