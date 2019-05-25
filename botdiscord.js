@@ -244,7 +244,7 @@ if (ReBeLL.content.startsWith(prefix + `8ball`)) {
     let argsReBeL = ReBeLL.content.split(' ').slice(1).join(' ');
     let authorReBeL = ReBeLL.author.username;
 
-    // https://en.wikipedia.org/wiki/Magic_8-Ball
+   
     let ReBeL = [
         //إجآبآت إجآبيه
 "هذا مؤكد.",
@@ -1176,4 +1176,4 @@ client.on('message',  message => {
 
 
 
-client.login('NDkwNDkwNDk5NDk3NDU5NzEy.DpA3Xw.6_9-c3OqOk1rEhMFAMp8pslJc0E'); 
+client.login('NTgxNjA2NDU1NTM5NTMxNzg2.XOksJw.nGfuiF0WMujlGU7QiF2bpaL1oRk'); 
